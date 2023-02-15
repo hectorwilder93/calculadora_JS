@@ -1,0 +1,45 @@
+@import url("http://fonts.cdnfonts.com/css/open-sans");
+
+body {
+  border-radius: 25px;
+  background: #4a8aa9;
+  text-align: center;
+  font-family: "Open Sans";
+  color: rgb(255, 0, 187);
+}
+
+td {
+  width: 50px;
+  height: 50px;
+  background: #c8c5cf;
+  border: 1px solid black;
+}
+#resultado {
+  height: 100px;
+  padding: 10px;
+}
+
+table {
+  margin: 0 auto;
+}
+#res_inner {
+  width: 100%;
+  height: 100%;
+  font-size: 50px;
+}
+.numero input {
+  width: 80%;
+  height: 30px;
+  background: transparent;
+  border: 0;
+  cursor: default;
+  font-size: 20px;
+  text-align: center;
+}
+.numero input:focus,
+.numero input:active {
+  width: 80%;
+  height: 30px;
+  background: transparent;
+  border: 0;
+}

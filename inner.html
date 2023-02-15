@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>    
+     <h1>Calculadora funcional</h1>
+    <table class="calc" cellspacing="0">
+        
+        <tbody >
+            <tr>
+                <td colspan="2" id="num1" class="numero">
+                    <input id="vnum1" type="text" readonly="">
+                </td>
+                <td id="operador"></td>
+                <td colspan="2" id="num2" class="numero">
+                    <input id="vnum2" type="text" readonly="">
+                </td>
+            </tr>
+
+            <tr>
+                <td colspan="5" id="resultado">
+                    <table id="res_inner">
+                        <tbody><tr>
+                            <td>
+                                
+                            </td>
+                        </tr>
+                    </tbody></table>                
+                </td>
+            </tr>
+
+            <tr>
+                <td onclick="insertar_digito(7)">7</td>
+                <td onclick="insertar_digito(8)">8</td>
+                <td onclick="insertar_digito(9)">9</td>
+                <td onclick="seleccionar_operacion('suma')">+</td>
+                <td onclick="seleccionar_operacion('potencia')">^</td>
+            </tr>
+
+            <tr>
+                <td onclick="insertar_digito(4)">4</td>
+                <td onclick="insertar_digito(5)">5</td>
+                <td onclick="insertar_digito(6)">6</td>
+                <td onclick="seleccionar_operacion('resta')">-</td>
+                <td onclick="seleccionar_operacion('modulo')">MOD</td>
+            </tr>
+
+            <tr>
+                <td onclick="insertar_digito(1)">1</td>
+                <td onclick="insertar_digito(2)">2</td>
+                <td onclick="insertar_digito(3)">3</td>
+                <td onclick="seleccionar_operacion('multiplicacion')">X</td>
+                <td onclick="limpiar_pantalla('C')">C</td>
+            </tr>
+
+            <tr>
+                <td onclick="Limpia_digito ('clr')">clr</td>
+                <td onclick="insertar_digito(0)">0</td>
+                <td onclick="insertar_digito('.')">.</td>
+                <td onclick="seleccionar_operacion('division')">/</td>
+                <td onclick="resolver()">=</td>
+            </tr>
+        </tbody>
+    </table>
+    <script type="text/javascript" src="script.js"></script>
+</body>
+</html>
